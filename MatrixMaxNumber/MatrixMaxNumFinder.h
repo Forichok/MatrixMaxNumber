@@ -6,11 +6,13 @@ class MatrixMaxNumFinder // i - rows
 {
 public:
 	MatrixMaxNumFinder();
+	MatrixMaxNumFinder(vector<vector<int>> matrix);
 	
 	MatrixMaxNumFinder(int i,int j);
 
 	void print_matrix();
-
+	std::string find_max();
+	std::string get_max_from_point(int i, int j);
 	~MatrixMaxNumFinder();
 private: 
 	/**
